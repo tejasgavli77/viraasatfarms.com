@@ -381,6 +381,38 @@ body {
   color: #6b4c38;
 }
 
+/* FAQ */
+.faq-section {
+  padding: 85px 0;
+  background: #fffdf8;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #f8ecd8;
+  border: 1px solid rgba(139, 74, 31, 0.12);
+  border-radius: 22px;
+  padding: 24px 28px;
+  box-shadow: 0 18px 45px rgba(73, 39, 16, 0.05);
+}
+
+.faq-item h3 {
+  font-size: 19px;
+  color: #2b1b10;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #6b4c38;
+}
 
 /* Contact */
 .contact-section {
@@ -709,6 +741,18 @@ body {
 
   .trust-strip span:not(:last-child)::after {
     display: none;
+  }
+
+    .faq-section {
+    padding: 60px 0;
+  }
+
+  .faq-item {
+    padding: 22px;
+  }
+
+  .faq-item h3 {
+    font-size: 18px;
   }
 
 }
