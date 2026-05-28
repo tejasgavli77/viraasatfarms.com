@@ -143,6 +143,35 @@ body {
   display: block;
 }
 
+/* Trust Strip */
+.trust-strip {
+  background: #2b1b10;
+  padding: 16px 0;
+}
+
+.trust-strip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+.trust-strip span {
+  color: #f3dfc5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+
+.trust-strip span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -21px;
+  color: #f3c27a;
+}
+
 /* Why Viraasat */
 .why-section {
   padding: 80px 0;
@@ -668,6 +697,18 @@ body {
   .footer-links {
     justify-content: center;
     gap: 16px;
+  }
+
+    .trust-strip-container {
+    gap: 14px 24px;
+  }
+
+  .trust-strip span {
+    font-size: 13px;
+  }
+
+  .trust-strip span:not(:last-child)::after {
+    display: none;
   }
 
 }
