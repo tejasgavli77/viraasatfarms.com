@@ -36,9 +36,18 @@ body {
 /* Header */
 .site-header {
   width: 100%;
-  background: #f8ecd8;
+  background: rgba(248, 236, 216, 0.92);
   padding: 14px 0;
   border-bottom: 1px solid rgba(83, 48, 20, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(12px);
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.site-header.scrolled {
+  box-shadow: 0 12px 35px rgba(73, 39, 16, 0.10);
 }
 
 .header-container {
