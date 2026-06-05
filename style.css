@@ -8,6 +8,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f8ecd8;
