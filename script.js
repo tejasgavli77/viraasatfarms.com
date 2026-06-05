@@ -32,16 +32,31 @@ const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 const navLinks = document.querySelectorAll(".main-nav a");
 
+const closeMobileMenu = () => {
+  mainNav.classList.remove("active");
+  menuToggle.classList.remove("active");
+};
+
 if (menuToggle && mainNav) {
-  menuToggle.addEventListener("click", () => {
+  menuToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
     mainNav.classList.toggle("active");
     menuToggle.classList.toggle("active");
+  });
+
+  mainNav.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener("click", () => {
+    if (mainNav.classList.contains("active")) {
+      closeMobileMenu();
+    }
   });
 }
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    mainNav.classList.remove("active");
-    menuToggle.classList.remove("active");
+    closeMobileMenu();
   });
 });
