@@ -334,7 +334,7 @@ body {
 }
 
 .featured-product {
-  transform: translateY(-8px);
+  transform: translateY(0);
 }
 
 .product-image-box {
