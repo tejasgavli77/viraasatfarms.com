@@ -321,6 +321,16 @@ body {
   border: 1px solid rgba(139, 74, 31, 0.13);
   box-shadow: 0 20px 55px rgba(73, 39, 16, 0.08);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px rgba(73, 39, 16, 0.14);
+}
+
+.product-card:hover .product-image-box img {
+  transform: scale(1.08);
 }
 
 .featured-product {
@@ -347,6 +357,7 @@ body {
   height: auto;
   object-fit: contain;
   display: block;
+  transition: transform 0.35s ease;
 }
 
 .product-card h3 {
