@@ -330,7 +330,8 @@ body {
 }
 
 .product-card:hover .product-image-box img {
-  transform: scale(1.08);
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px rgba(73, 39, 16, 0.14);
 }
 
 .featured-product {
