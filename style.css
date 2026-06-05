@@ -678,6 +678,31 @@ body {
   color: #7a5a43;
 }
 
+/* Button Hover Effects */
+.header-btn,
+.primary-btn,
+.secondary-btn,
+.product-btn,
+.contact-btn {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.header-btn:hover,
+.primary-btn:hover,
+.product-btn:hover,
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(139, 74, 31, 0.22);
+  background: #6f3717;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  background: #8b4a1f;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(139, 74, 31, 0.16);
+}
+
 /* Mobile Menu Button */
 .menu-toggle {
   display: none;
