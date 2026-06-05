@@ -155,6 +155,60 @@ body {
   display: block;
 }
 
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: rgba(184, 121, 60, 0.18);
+  border-radius: 50%;
+  right: -120px;
+  top: 80px;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: rgba(243, 194, 122, 0.22);
+  border-radius: 50%;
+  left: -80px;
+  bottom: 40px;
+  filter: blur(18px);
+  z-index: 0;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  animation: heroFloat 4.5s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Trust Strip */
 .trust-strip {
   background: #2b1b10;
@@ -645,60 +699,6 @@ body {
   .hero-image {
     max-width: 100%;
   }
-
-  .hero-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  background: rgba(184, 121, 60, 0.18);
-  border-radius: 50%;
-  right: -120px;
-  top: 80px;
-  filter: blur(20px);
-  z-index: 0;
-}
-
-.hero-section::after {
-  content: "";
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  background: rgba(243, 194, 122, 0.22);
-  border-radius: 50%;
-  left: -80px;
-  bottom: 40px;
-  filter: blur(18px);
-  z-index: 0;
-}
-
-.hero-container {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-image {
-  animation: heroFloat 4.5s ease-in-out infinite;
-}
-
-@keyframes heroFloat {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
   
   .why-section {
     padding: 55px 0;
