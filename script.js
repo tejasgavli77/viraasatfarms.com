@@ -14,3 +14,16 @@ const revealOnScroll = () => {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+const siteHeader = document.querySelector(".site-header");
+
+const updateHeaderOnScroll = () => {
+  if (window.scrollY > 20) {
+    siteHeader.classList.add("scrolled");
+  } else {
+    siteHeader.classList.remove("scrolled");
+  }
+};
+
+window.addEventListener("scroll", updateHeaderOnScroll);
+window.addEventListener("load", updateHeaderOnScroll);
