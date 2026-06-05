@@ -36,18 +36,38 @@ body {
 /* Header */
 .site-header {
   width: 100%;
-  background: rgba(248, 236, 216, 0.92);
+  background: rgba(248, 236, 216, 0.96);
   padding: 14px 0;
   border-bottom: 1px solid rgba(83, 48, 20, 0.12);
   position: sticky;
   top: 0;
   z-index: 999;
   backdrop-filter: blur(12px);
-  transition: box-shadow 0.3s ease, padding 0.3s ease;
+  transition: all 0.35s ease;
 }
 
 .site-header.scrolled {
-  box-shadow: 0 12px 35px rgba(73, 39, 16, 0.10);
+  width: min(94%, 1160px);
+  margin: 12px auto 0;
+  padding: 10px 0;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 74, 31, 0.16);
+  box-shadow: 0 16px 45px rgba(73, 39, 16, 0.16);
+  animation: headerPop 0.35s ease;
+}
+
+.site-header.scrolled .site-logo {
+  width: 125px;
+}
+
+@keyframes headerPop {
+  0% {
+    transform: translateY(-10px) scale(0.98);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 .header-container {
@@ -867,6 +887,16 @@ body {
 
   .faq-item h3 {
     font-size: 18px;
+  }
+
+    .site-header.scrolled {
+    width: 94%;
+    border-radius: 24px;
+    margin-top: 8px;
+  }
+
+  .site-header.scrolled .site-logo {
+    width: 115px;
   }
 
 }
