@@ -335,6 +335,17 @@ body {
   background: #f8ecd8;
 }
 
+.product-note {
+  display: inline-block;
+  background: #2b1b10;
+  color: #f3c27a;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 18px;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
