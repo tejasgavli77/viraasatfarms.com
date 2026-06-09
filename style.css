@@ -351,6 +351,9 @@ body {
   box-shadow: 0 20px 55px rgba(73, 39, 16, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .best-value-card {
@@ -389,6 +392,7 @@ body {
   border-radius: 18px;
   padding: 14px;
   margin-bottom: 20px;
+  margin-top: auto;
 }
 
 .product-price-box span {
@@ -451,11 +455,12 @@ body {
   margin-bottom: 12px;
 }
 
-.product-card p {
+.product-card > p:not(.product-size) {
   font-size: 15.5px;
   line-height: 1.7;
   color: #6b4c38;
   margin-bottom: 22px;
+  min-height: 78px;
 }
 
 .product-btn {
