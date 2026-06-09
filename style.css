@@ -383,11 +383,29 @@ body {
   margin-bottom: 12px;
 }
 
-.product-price {
-  font-size: 28px;
+.product-price-box {
+  background: #fff7e8;
+  border: 1px solid rgba(139, 74, 31, 0.14);
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.product-price-box span {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: #8b4a1f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.product-price-box strong {
+  display: block;
+  font-size: 30px;
   font-weight: 900;
   color: #2b1b10;
-  margin-bottom: 20px;
 }
 
 .product-card:hover {
