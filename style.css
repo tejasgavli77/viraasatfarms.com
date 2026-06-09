@@ -353,6 +353,25 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.best-value-card {
+  position: relative;
+  border: 2px solid rgba(139, 74, 31, 0.28);
+}
+
+.product-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #2b1b10;
+  color: #f3c27a;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  z-index: 2;
+}
+
 .product-size {
   display: inline-block;
   background: #f8ecd8;
