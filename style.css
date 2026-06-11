@@ -943,6 +943,31 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* Section Heading Alignment Fix */
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.section-heading .section-tagline,
+.section-heading h2,
+.section-heading p {
+  text-align: center;
+}
+
+/* Product Note Alignment Fix */
+.products-section .section-heading {
+  text-align: center;
+}
+
+.product-note {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .site-header {
