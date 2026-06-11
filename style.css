@@ -318,37 +318,50 @@ body {
 }
 
 /* Why Viraasat */
-.why-section {
-  padding: 80px 0;
+/* About */
+.about-section {
+  padding: 90px 0;
   background: #fffdf8;
 }
 
-.section-heading {
-  max-width: 720px;
-  margin: 0 auto 45px;
-  text-align: center;
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
-.section-tagline {
-  font-size: 14px;
-  font-weight: 700;
-  color: #9b5a24;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  margin-bottom: 12px;
+.about-content {
+  width: 52%;
 }
 
-.section-heading h2 {
+.about-content h2 {
   font-size: 42px;
   line-height: 1.15;
   color: #2b1b10;
+  margin-bottom: 18px;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #6b4c38;
   margin-bottom: 16px;
 }
 
-.section-heading p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #6b4c38;
+.about-image-wrap {
+  width: 48%;
+  background: #f8ecd8;
+  border-radius: 32px;
+  padding: 28px;
+  box-shadow: 0 20px 55px rgba(73, 39, 16, 0.08);
+  overflow: hidden;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
 }
 
 .why-grid {
@@ -1183,22 +1196,19 @@ body {
   height: 29px;
 }
 
-    .about-section {
+      .about-section {
     padding: 60px 0;
   }
 
   .about-container {
     flex-direction: column;
     gap: 34px;
+    text-align: center;
   }
 
   .about-content,
   .about-image-wrap {
     width: 100%;
-  }
-
-  .about-content {
-    text-align: center;
   }
 
   .about-content h2 {
