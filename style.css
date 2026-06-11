@@ -669,8 +669,25 @@ body {
 
 /* FAQ */
 .faq-section {
-  padding: 85px 0;
+  padding: 55px 0 75px;
   background: #fffdf8;
+}
+
+.faq-heading-panel {
+  background: #fffdf8;
+  border: 1px solid rgba(139, 74, 31, 0.13);
+  border-radius: 26px;
+  padding: 26px 24px;
+  box-shadow: 0 14px 36px rgba(73, 39, 16, 0.05);
+  margin-bottom: 30px;
+}
+
+.faq-heading-panel h2 {
+  margin-bottom: 8px;
+}
+
+.faq-heading-panel p {
+  margin-bottom: 0;
 }
 
 .faq-list {
