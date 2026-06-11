@@ -968,6 +968,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  .why-section {
+    padding-top: 115px;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .site-header {
@@ -1056,7 +1062,7 @@ body {
   }
   
   .why-section {
-    padding: 75px 0;
+    padding: 55px 0;
   }
 
   .section-heading h2 {
