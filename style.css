@@ -1030,6 +1030,14 @@ body {
   .why-section {
     padding-top: 70px;
   }
+
+    .process-section {
+    padding-bottom: 55px;
+  }
+
+  .faq-section {
+    padding-top: 30px;
+  }
 }
 
 /* Mobile */
