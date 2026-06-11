@@ -1195,24 +1195,23 @@ body {
   height: 54px;
 }
 
-.floating-whatsapp svg {
-  width: 29px;
-  height: 29px;
-}
 
-      .about-section {
+    .about-section {
     padding: 60px 0;
   }
 
   .about-container {
     flex-direction: column;
     gap: 34px;
-    text-align: center;
   }
 
   .about-content,
   .about-image-wrap {
     width: 100%;
+  }
+
+  .about-content {
+    text-align: center;
   }
 
   .about-content h2 {
