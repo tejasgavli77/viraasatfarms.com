@@ -60,3 +60,30 @@ navLinks.forEach((link) => {
     closeMobileMenu();
   });
 });
+
+const sections = document.querySelectorAll("section[id]");
+const menuLinks = document.querySelectorAll(".main-nav .nav-link");
+
+const updateActiveNavLink = () => {
+  let currentSectionId = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 160;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSectionId = section.getAttribute("id");
+    }
+  });
+
+  menuLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === `#${currentSectionId}`) {
+      link.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", updateActiveNavLink);
+window.addEventListener("load", updateActiveNavLink);
