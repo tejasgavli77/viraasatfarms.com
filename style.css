@@ -1050,6 +1050,14 @@ body {
   scroll-margin-top: 120px;
 }
 
+.main-nav a.active {
+  color: #8b4a1f;
+}
+
+.main-nav a.active::after {
+  width: 100%;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .site-header {
