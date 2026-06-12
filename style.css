@@ -1040,6 +1040,16 @@ body {
   }
 }
 
+/* Anchor Scroll Position Fix */
+#about,
+#why-viraasat,
+#products,
+#process,
+#faq,
+#contact {
+  scroll-margin-top: 120px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .site-header {
@@ -1317,6 +1327,15 @@ body {
 
   .about-content p {
     font-size: 16px;
+  }
+
+    #about,
+  #why-viraasat,
+  #products,
+  #process,
+  #faq,
+  #contact {
+    scroll-margin-top: 135px;
   }
   
 }
